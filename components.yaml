@@ -1,0 +1,24 @@
+components:
+- name: github.com/acme/ocm-test-app
+  version: "v1.0.0"
+  provider:
+    name: acme.org
+  resources:
+    - name: deployment
+      type: Directory
+      input:
+        type: dir
+        path: "manifests"
+        compress: true
+    - name: config
+      type: PlainText
+      input:
+        type: file
+        path: "config.yaml"
+        compress: true
+    - name: image
+      type: ociImage
+      version: "v1.0.0"
+      access:
+        type: ociArtifact
+        imageReference: docker.io/ammar31/database-app:1.0.0
