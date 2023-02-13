@@ -1,0 +1,22 @@
+apiVersion: delivery.ocm.software/v1alpha1
+kind: Localization
+metadata:
+  name: ocm-test-app
+  namespace: ocm-system
+spec:
+  interval: 1m0s
+  componentVersionRef:
+    name: ocm-test-app
+    namespace: ocm-system
+  source:
+    sourceRef:
+      kind: Snapshot
+      name: ocm-test-app-deployment
+      namespace: ocm-system
+  configRef:
+    resource:
+      resourceRef:
+        name: config
+  snapshotTemplate:
+    name: ocm-test-app-deployment-localized
+    createFluxSource: true
