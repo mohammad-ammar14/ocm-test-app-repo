@@ -1,7 +1,7 @@
 apiVersion: delivery.ocm.software/v1alpha1
 kind: ComponentVersion
 metadata:
-  name: github.com/acme/ocm-test
+  name: github.com/acme/ocm-test-app
   namespace: ocm-system
   provider:
     name: acme
