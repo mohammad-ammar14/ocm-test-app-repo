@@ -3,10 +3,10 @@ kind: ComponentVersion
 metadata:
   name: ocm-test-app
   namespace: ocm-system
-  provider:
-    name: acme.org
-  version: v1.0.0
-repositoryContexts: []
+  # provider:
+  #   name: acme.org
+  # version: v1.0.0
+#repositoryContexts: []
 spec: 
   interval: 10m0s
   repository:  
