@@ -15,11 +15,11 @@ spec:
       name: creds    
   references:
   - componentName: github.com/acme/ocm-test-app
-    name: ocm-test-app
-    version: v1.0.0
+#    name: ocm-test-app
+     version: v1.0.0
   - componentName: github.com/acme/ocm-frontend-app
-    name: ocm-frontend-app
-    version: v1.0.0
+#    name: ocm-frontend-app
+     version: v1.0.0
 
 # apiVersion: delivery.ocm.software/v1alpha1
 # kind: ComponentVersion
