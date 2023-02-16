@@ -1,0 +1,7 @@
+name: ocm-test-app    
+componentName: github.com/acme/ocm-test-app
+version: v1.0.0
+---
+name: ocm-frontend-app
+componentName: github.com/acme/ocm-frontend-app
+version: v1.0.0
