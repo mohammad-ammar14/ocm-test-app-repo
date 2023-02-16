@@ -3,23 +3,20 @@ kind: ComponentVersion
 metadata:
   name: ocm-test-app
   namespace: ocm-system
-  # provider:
-  #   name: acme.org
-  # version: v1.0.0
-#repositoryContexts: []
-spec: 
+spec:
   interval: 10m0s
-  repository:  
+  repository: 
     url: ghcr.io/mohammad-ammar14
-    secretRef: 
-      name: creds    
-  references:
-  - componentName: github.com/acme/ocm-test-app
-#    name: ocm-test-app
-     version: v1.0.0
-  - componentName: github.com/acme/ocm-frontend-app
-#    name: ocm-frontend-app
-     version: v1.0.0
+    secretRef:
+      name: creds
+  references: 
+    expand: true
+#     - componentName: github.com/acme/ocm-test-app
+# #      name: ocm-test-app
+#       version: v1.0.0
+#     - componentName: github.com/acme/ocm-frontend-app
+# #      name: ocm-frontend-app
+#       version: v1.0.0
 
 # apiVersion: delivery.ocm.software/v1alpha1
 # kind: ComponentVersion
