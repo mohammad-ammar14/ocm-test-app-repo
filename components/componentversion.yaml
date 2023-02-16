@@ -12,7 +12,8 @@ spec:
     url: ghcr.io/mohammad-ammar14
     secretRef:
       name: creds
-   references: 
+  references: 
+    referencePath: 
   #   expand: true
     - componentName: github.com/acme/ocm-test-app
 #      name: ocm-test-app
