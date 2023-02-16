@@ -1,0 +1,1 @@
+{"schemaVersion":1,"artifacts":[{"repository":"component-descriptors/github.com/acme/ocm-frontend-app","tag":"v1.0.0","digest":"sha256:c6db011d838bf79e40ab54a0a7f51f1b74395e89165cd54a7effdf09f3c1506c"},{"repository":"component-descriptors/github.com/acme/ocm-test-app","tag":"v1.0.0","digest":"sha256:8098970f7f763df9d740320453fd7f597d99bf1a3a6c0fabf1c78d0c78772823"}]}
