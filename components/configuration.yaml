@@ -1,0 +1,25 @@
+apiVersion: delivery.ocm.software/v1alpha1
+kind: Configuration
+metadata:
+  name: carts
+spec:
+  interval: 1m0s
+  componentVersionRef:
+    name: nested-component
+    namespace: default
+  source:
+    sourceRef:
+      kind: Snapshot
+      name: carts-manifests-localized
+      namespace: default
+  configRef:
+    resource:
+      resourceRef:
+        name: config
+        referencePath:
+          - name: carts
+  snapshotTemplate:
+    name: carts-manifests-configured
+  values:
+    color: "blue"
+    message: "Hola"
